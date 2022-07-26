@@ -1,0 +1,18 @@
+*{ margin: 0;padding: 0;box-sizing: border-box; }
+body{ background-image: url('../images/bg.svg');
+	background-position: center;background-size: cover;min-height: 700px;padding: 20px 0 80px 0; }
+	
+/* ESTILIZAÇÃO MENU*/
+header{ display: flex;max-width: 1100px;padding: 0 2%;margin: 0 auto; }
+.logo-menu{ width: 50%; }
+.itens-menu{ width:50%;margin-top: 10px; }
+.itens-menu a{ font-weight: bold;color: #fff;text-decoration: none;display: inline-block;margin: 0 10px; }
+.itens-menu a:hover{ border-bottom: 2px solid #ffdd33; }
+.itens-menu a.contato-btn{ background-color: #0f3fd3;padding: 7px 10px;border-radius: 3px;cursor: pointer; }
+.itens-menu a.contato-btn:hover{ border: 0; }
+
+/* ESTILIZAÇÃO MOCKUP */
+.mockup{display: block;width: 100%;color: #fff;text-align: center;padding-top: 80px;}
+.mockup h1{ font-size: 40px;margin-bottom: 10px; }
+.mockup p{ font-size: 17px;margin-bottom: 20px; }
+.mockup img{ width: 600px; margin-bottom: 10px; }

@@ -1,9 +1,11 @@
 *{ margin: 0;padding: 0;box-sizing: border-box; }
 body{ background-image: url('../images/bg.svg');
-	background-position: center;background-size: cover;min-height: 700px;padding: 20px 0 80px 0; }
+	background-position: center;background-size: cover;max-height: 700px;padding: 20px 0 80px 0;
+	font-family: 'Albert Sans', sans-serif;background-repeat: no-repeat; }
 	
 /* ESTILIZAÇÃO MENU*/
 header{ display: flex;max-width: 1100px;padding: 0 2%;margin: 0 auto; }
+main{ max-width: 1100px;padding: 0 2%;margin: 0 auto; }
 .logo-menu{ width: 50%; }
 .itens-menu{ width:50%;margin-top: 10px; }
 .itens-menu a{ font-weight: bold;color: #fff;text-decoration: none;display: inline-block;margin: 0 10px; }
@@ -11,8 +13,20 @@ header{ display: flex;max-width: 1100px;padding: 0 2%;margin: 0 auto; }
 .itens-menu a.contato-btn{ background-color: #0f3fd3;padding: 7px 10px;border-radius: 3px;cursor: pointer; }
 .itens-menu a.contato-btn:hover{ border: 0; }
 
-/* ESTILIZAÇÃO MOCKUP */
+/* ESTILIZAÇÃO SEÇÃO MOCKUP */
 .mockup{display: block;width: 100%;color: #fff;text-align: center;padding-top: 80px;}
 .mockup h1{ font-size: 40px;margin-bottom: 10px; }
 .mockup p{ font-size: 17px;margin-bottom: 20px; }
 .mockup img{ width: 600px; margin-bottom: 10px; }
+
+/* ESTILIZAÇÃO SEÇÃO MARCAS */ 
+.marcas{display: flex; justify-content: space-around;margin-top: 100px;}
+.marcas img{width: 200px;}
+/* ESTILIZAÇÃO POR QUE NÓS */
+.porque-nos{display: flex; flex-direction: column; align-items: center;background-color: #FBFCFE; margin-top: 100px; }
+.porque-nos > h2{font-size: 64px; margin-bottom: 20px;}
+.porque-nos > p{font-size: 16px; margin-bottom: 20px; color: #7E92AC; }
+.diferenciais{display: flex;margin-top: 30px; }
+.box-diferenciais{box-shadow: 0px 20px 40px #2426721C;width: 32%; margin-right: 1%; padding: 10px 20px;border-radius: 10px; }
+.box-diferenciais h3{font-size: 22px; margin-bottom: 20px; }
+.box-diferenciais p{font-size: 13px; color: #7e92ac;margin-bottom: 20px; }

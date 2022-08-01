@@ -9,7 +9,7 @@ main{ max-width: 1100px;padding: 0 2%;margin: 0 auto; }
 .logo-menu{ width: 50%; }
 .itens-menu{ width:50%;margin-top: 10px; }
 .itens-menu a{ font-weight: bold;color: #fff;text-decoration: none;display: inline-block;margin: 0 10px; }
-.itens-menu a:hover{ border-bottom: 2px solid #ffdd33; }
+.itens-menu a:hover{ border-bottom: 3px solid #ffdd33; }
 .itens-menu a.contato-btn{ background-color: #0f3fd3;padding: 7px 10px;border-radius: 3px;cursor: pointer; }
 .itens-menu a.contato-btn:hover{ border: 0; }
 
@@ -141,4 +141,16 @@ main{ max-width: 1100px;padding: 0 2%;margin: 0 auto; }
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+footer{
+	max-width: 100%;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	background-color: #255AFF;
+	color: #fff;
+	margin-top: 50px;
 }

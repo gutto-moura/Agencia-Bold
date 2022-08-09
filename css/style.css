@@ -13,6 +13,21 @@ main{ max-width: 1100px;padding: 0 2%;margin: 0 auto; }
 .itens-menu a.contato-btn{ background-color: #0f3fd3;padding: 7px 10px;border-radius: 3px;cursor: pointer; }
 .itens-menu a.contato-btn:hover{ border: 0; }
 
+/* ESTILIZAÇÃO MOBILE */
+.itens-menu-mobile{
+	display: none;
+	width: 50%;
+	text-align: right;
+}
+
+.itens-menu-mobile i{
+    color:white;
+    position: relative;
+    top:15px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
 /* ESTILIZAÇÃO SEÇÃO MOCKUP */
 .mockup{display: block;width: 100%;color: #fff;text-align: center;padding-top: 80px;}
 .mockup h1{ font-size: 40px;margin-bottom: 10px; }
@@ -163,6 +178,57 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+	footer{
+		flex-direction: column;
+	}
+	.itens-menu-mobile{
+        display: block;
+       
+    }
+	 .menu-mobile{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left:0;
+        top:65px;
+        background-color: white;
+        width:100%;
+        padding:15px 0;
+        text-align: center;
+    }
+
+    .show{
+        opacity: 1;
+    }
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin:8px 0;
+        color:rgb(40,40,40);
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom:1px solid rgb(40,40,40);
+        padding:8px 0;
+    }
+	header .itens-menu{
+		display: none;
+	}
+	.nome-menu{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	footer .itens-menu{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	footer .itens-menu a { 
+		margin-bottom: 10px;
+	}
 	header{
 		width: 100%;
 		justify-content: center;
@@ -180,6 +246,6 @@ footer{
 	.beneficios{margin-bottom: 50px; }
 	.container-beneficio{display: flex; flex-direction: column;justify-content: center}
 	.container-depoimentos{flex-direction: column;}
-	.box-depoimentos{width: 100%;margin-bottom: 20px;padding: 20px;margin-right: 0;}
+	.box-depoimentos{width: 100%;margin-bottom: 20px;padding: 20px;margin-right: 0;}	
 	
 }

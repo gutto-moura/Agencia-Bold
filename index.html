@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400&display=swap" rel="stylesheet">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<script src="https://kit.fontawesome.com/04aa25c7ca.js" crossorigin="anonymous"></script>
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -19,6 +20,14 @@
 			<a href = "#">Por que nós?</a>
 			<a href = "#">Depoimentos</a>
 			<a class = "contato-btn">Entre em contato</a>
+		</div>
+		<div class = "itens-menu-mobile">
+			<i class="fa-solid fa-bars"></i>
+            <div class="menu-mobile">
+                <a href="#">Início</a>
+                <a href="#">Por que nós?</a>
+                <a href="#">Depoimentos</a>
+            </div>
 		</div>
 	</header>
 	<main>
@@ -140,7 +149,7 @@
 		</section>
 	</main>
     <footer>
-		<div class = "logo-menu">
+		<div class = "nome-menu">
 			Desenvolvidor por Augusto Moura, idealizado pela Danki Code
 		</div>
 		<div class = "itens-menu">
@@ -150,5 +159,18 @@
 			<a class = "contato-btn">Entre em contato</a>
 		</div>
 	</footer>
+	<script>
+		var menuBtn = document.querySelector('.itens-menu-mobile i');
+			menuBtn.addEventListener('click', () => {
+				let itensMenu = document.querySelector('.menu-mobile');
+				if(itensMenu.classList.contains('show')){
+					itensMenu.classList.remove('show')
+					itensMenu.classList.add('hide')
+				}else{
+					itensMenu.classList.remove('hide')
+					itensMenu.classList.add('show')
+				}
+			})
+	</script>
   </body>
 </html>
